@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic javascript</title>
+</head>
+
+<body>
+
+    <div class="calculater">
+        <input type="text" class="display" id="display" readonly>
+        <div class="btn_input">
+            <button class="btn" id="clear_btn" >C</button>
+            <button class="btn operation_btn" onclick="inputkey('^')">x^n</button>
+            <button class="btn " id="delete_btn">del</button>
+            <button class="btn operation_btn" onclick="inputkey('%')">%</button>
+            <button class="btn" onclick="inputkey(7)">7</button>
+            <button class="btn" onclick="inputkey(8)">8</button>
+            <button class="btn" onclick="inputkey(9)">9</button>
+            <button class="btn operation_btn" onclick="inputkey('+')">+</button>
+            <button class="btn" onclick="inputkey(4)">4</button>
+            <button class="btn" onclick="inputkey(5)">5</button>
+            <button class="btn" onclick="inputkey(6)">6</button>
+            <button class="btn operation_btn" onclick="inputkey('-')">-</button>
+            <button class="btn" onclick="inputkey(1)">1</button>
+            <button class="btn" onclick="inputkey(2)">2</button>
+            <button class="btn" onclick="inputkey(3)">3</button>
+            <button class="btn operation_btn" onclick="inputkey('*')">x</button>
+            <button class="btn" onclick="inputkey(0)">0</button>
+            <button class="btn" onclick="inputkey('.')">.</button>
+            <button class="btn operation_btn" onclick="inputkey('/')">/</button>
+            <button class="btn equol_btn" onclick="calculate()">=</button>
+
+        </div>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculater {
+            height: 500px;
+            width: 300px;
+            margin: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+            box-shadow: inset 0 0 10px white;
+            border: 2px solid black;
+
+            input {
+                height: 20%;
+                font-size: large;
+                padding: 10px;
+                width: 100%;
+                box-shadow: inset 0 0 5px black;
+                background-color: greenyellow;
+            }
+
+            .btn_input {
+                margin-top: 5%;
+                height: 75%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+
+
+                .btn {
+                    border-radius: 50px;
+                    font-size: medium;
+                    font-weight: bold;
+                    box-shadow: inset -2px -2px 5px black;
+                }
+                .btn:hover{
+                    cursor: pointer;
+                    transform: scale(1.02);
+                    transition: all 0.3s ease-in-out;
+                }
+                .btn:active{
+                    transform: scale(0.95);
+                }
+                #clear_btn{
+                    background-color: rgb(231, 62, 62);
+                }
+                .equol_btn{
+                    background-color: rgb(163, 149, 255);
+                }
+                .operation_btn{
+                    background: rgb(129, 236, 129);
+                }
+                #delete_btn{
+                    background-color: red;
+                }
+
+            }
+        }
+    </style>
+
+    <script src="calculater.js"></script>
+</body>
+
+</html>
