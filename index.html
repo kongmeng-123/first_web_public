@@ -5,36 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basic javascript</title>
-</head>
-
-<body>
-
-    <div class="calculater">
-        <input type="text" class="display" id="display" readonly>
-        <div class="btn_input">
-            <button class="btn" id="clear_btn" >C</button>
-            <button class="btn operation_btn" onclick="inputkey('^')">x^n</button>
-            <button class="btn " id="delete_btn">del</button>
-            <button class="btn operation_btn" onclick="inputkey('%')">%</button>
-            <button class="btn" onclick="inputkey(7)">7</button>
-            <button class="btn" onclick="inputkey(8)">8</button>
-            <button class="btn" onclick="inputkey(9)">9</button>
-            <button class="btn operation_btn" onclick="inputkey('+')">+</button>
-            <button class="btn" onclick="inputkey(4)">4</button>
-            <button class="btn" onclick="inputkey(5)">5</button>
-            <button class="btn" onclick="inputkey(6)">6</button>
-            <button class="btn operation_btn" onclick="inputkey('-')">-</button>
-            <button class="btn" onclick="inputkey(1)">1</button>
-            <button class="btn" onclick="inputkey(2)">2</button>
-            <button class="btn" onclick="inputkey(3)">3</button>
-            <button class="btn operation_btn" onclick="inputkey('*')">x</button>
-            <button class="btn" onclick="inputkey(0)">0</button>
-            <button class="btn" onclick="inputkey('.')">.</button>
-            <button class="btn operation_btn" onclick="inputkey('/')">/</button>
-            <button class="btn equol_btn" onclick="calculate()">=</button>
-
-        </div>
-    </div>
     <style>
         * {
             margin: 0;
@@ -108,7 +78,36 @@
             }
         }
     </style>
+</head>
 
+<body>
+
+    <div class="calculater">
+        <input type="text" class="display" id="display" readonly>
+        <div class="btn_input">
+            <button class="btn" id="clear_btn" >C</button>
+            <button class="btn operation_btn" onclick="inputkey('^')">x^n</button>
+            <button class="btn " id="delete_btn">del</button>
+            <button class="btn operation_btn" onclick="inputkey('%')">%</button>
+            <button class="btn" onclick="inputkey(7)">7</button>
+            <button class="btn" onclick="inputkey(8)">8</button>
+            <button class="btn" onclick="inputkey(9)">9</button>
+            <button class="btn operation_btn" onclick="inputkey('+')">+</button>
+            <button class="btn" onclick="inputkey(4)">4</button>
+            <button class="btn" onclick="inputkey(5)">5</button>
+            <button class="btn" onclick="inputkey(6)">6</button>
+            <button class="btn operation_btn" onclick="inputkey('-')">-</button>
+            <button class="btn" onclick="inputkey(1)">1</button>
+            <button class="btn" onclick="inputkey(2)">2</button>
+            <button class="btn" onclick="inputkey(3)">3</button>
+            <button class="btn operation_btn" onclick="inputkey('*')">x</button>
+            <button class="btn" onclick="inputkey(0)">0</button>
+            <button class="btn" onclick="inputkey('.')">.</button>
+            <button class="btn operation_btn" onclick="inputkey('/')">/</button>
+            <button class="btn equol_btn" onclick="calculate()">=</button>
+
+        </div>
+    </div>
     <script src="calculater.js"></script>
 </body>
 
